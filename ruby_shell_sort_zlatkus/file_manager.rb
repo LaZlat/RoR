@@ -2,7 +2,6 @@
 
 # manages the files
 class FilesManager
-
   # Nuskaito faila ir grazina
   def read_file(numbers_file)
     file_into_array(File.readlines(numbers_file))

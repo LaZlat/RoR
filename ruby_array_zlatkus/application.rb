@@ -24,7 +24,6 @@ end
 # Sukuria nauja kintamaji i kuri per contructoriu perduoda array inicializuojant
 calc = Calculations.new(integer_array)
 
-
 # Kviecia metodus jog butu apskaiciuojami atitinkami veikmai.
 calc.min
 calc.max

@@ -2,7 +2,6 @@
 
 # Shell sorting algorithm
 class SortingAlgorithm
-
   # Metodas kuris sortina. Rubocop teigia jog per daug eiluciu, bet visos reikalingos
   def shell_sort(array)
     h = 1
