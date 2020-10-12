@@ -25,8 +25,8 @@ end
 calc = Calculations.new(integer_array)
 
 # Kviecia metodus jog butu apskaiciuojami atitinkami veikmai.
-calc.min
-calc.max
-calc.count_min
-calc.count_max
-calc.without_min_max
+puts calc.min
+puts calc.max
+puts calc.count_min
+puts calc.count_max
+puts calc.without_min_max
