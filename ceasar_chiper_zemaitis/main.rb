@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# importinam sifravimo klase
+# importuojama sifravimo klase
 require_relative 'ceasar_chiper.rb'
 
 # inicijuojama sifravimo klase
