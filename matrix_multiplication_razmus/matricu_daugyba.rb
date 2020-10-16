@@ -2,7 +2,7 @@
 
 # multiplies two matrixes
 class MatrixMultiplicator
-  # This method is just to silence rubocop, because it does not like mora than 2 nested loops
+  # This method is just to silence rubocop, because it does not like more than 2 nested loops
   def last_loop(result, arr1, arr2, iii, jjj)
     (0..arr1[0].length - 1).each do |k|
       result[iii][jjj] += arr1[iii][k] * arr2[k][jjj]

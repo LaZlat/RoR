@@ -25,7 +25,6 @@ class Polindromes
     array
   end
 
-  # sutrumpinau metoda, bet jis vistiek per ilgas
   def calculate(how_many)
     array = []
     i = 0
