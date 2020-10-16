@@ -4,23 +4,23 @@
 class SortingAlgorithm
   # Metodas kuris sortina. Rubocop teigia jog per daug eiluciu, bet visos reikalingos
   def shell_sort(array)
-    h = 1
+    tic = 1
     n = array.length
-    h = (3 * h) + 1 while h < n / 3
-    while h >= 1
-      (h...n).each do |i|
-        j = i
-        while j >= h
-          if array[j - h] > array[j]
-            temp = array[j]
-            array[j] = array[j - h]
-            array[j - h] = temp
-          end
-          j -= h
-        end
-      end
-      h /= 3
-    end
+    tic = (3 * tic) + 1 while tic < (n / 3)
+    sort(array, tic, n)
     array
+  end
+end
+
+def sort(array, tic, lenght)
+  while tic >= 1
+    (tic...lenght).each do |i|
+      j = i
+      while j >= tic
+        array[j - tic], array[j] = array[j], array[j - tic] if array[j - tic] > array[j]
+        j -= tic
+      end
+    end
+    tic /= 3
   end
 end
