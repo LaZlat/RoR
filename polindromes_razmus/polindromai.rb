@@ -12,20 +12,24 @@ class Polindromes
     polindromas
   end
 
-  # sutrumpinau metoda, bet jis vistiek per ilgas
-  def calculate(how_many)
-    array = []
-    i = 0
-    skaicius = 9
-    while i < how_many
+  def find_polindromes(array, iii, skaicius, how_many)
+    while iii < how_many
       skaicius += 1
       temp = skaicius
       polindromas = form_polindrome(temp)
       if polindromas == skaicius
         array.append(polindromas)
-        i += 1
+        iii += 1
       end
     end
     array
+  end
+
+  # sutrumpinau metoda, bet jis vistiek per ilgas
+  def calculate(how_many)
+    array = []
+    i = 0
+    skaicius = 9
+    find_polindromes(array, i, skaicius, how_many)
   end
 end
