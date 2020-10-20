@@ -2,7 +2,7 @@
 
 # Shell sorting algorithm
 class SortingAlgorithm
-  # Metodas kuris sortina. Rubocop teigia jog per daug eiluciu, bet visos reikalingos
+  # Metodas kuris sortina.
   def shell_sort(array)
     tic = 1
     n = array.length
@@ -12,6 +12,7 @@ class SortingAlgorithm
   end
 end
 
+# Metodas kuris sortina.
 def sort(array, tic, lenght)
   while tic >= 1
     (tic...lenght).each do |i|
